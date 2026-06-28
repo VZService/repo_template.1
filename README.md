@@ -1,2 +1,5 @@
-# repo_template.1
-VZServcie的接单仓库模版
+# VZService接单仓库模版
+- 此模版用于VZService的接单仓库
+- 这个模版已有issues的提前设置
+- 此模版为公开模版，允许任何人使用，但是仅授权人员可以标注VZS
+### 版本：0.7
