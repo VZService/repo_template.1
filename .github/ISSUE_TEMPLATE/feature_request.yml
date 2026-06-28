@@ -1,0 +1,41 @@
+name: ✨ 新功能提案
+description: 提出一个新功能或对现有功能的较大改动建议
+title: "[新功能]: "
+labels: ["新功能"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢你为新功能提供创意！请详细描述你的想法，我们会认真评估。
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: 提交前检查
+      options:
+        - label: 我已搜索现有 issue，**未找到**重复或类似功能。
+          required: true
+        - label: 本 issue 仅反馈**一个**功能。
+          required: true
+        - label: 我确定本 issue 内容详细
+          required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: 你期望的解决方案
+      description: 清晰描述你希望添加的功能或改动。
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 你考虑过的替代方案
+      description: 如果有什么其他备选思路，也可以写在这里。
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 补充信息
+      description: 任何额外的截图、设计稿或上下文信息。

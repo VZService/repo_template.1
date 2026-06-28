@@ -1,0 +1,65 @@
+name: 🐛 Bug 反馈
+description: 报告一个程序错误，帮助我们改进
+title: "[Bug]: "
+labels: ["BUG"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢你花时间提交 Bug 报告！请尽量详细填写以下信息，方便我们快速定位问题。
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: 提交前检查
+      options:
+        - label: 我已搜索现有 issue，**未找到**重复或类似问题。
+          required: true
+        - label: 本 issue 仅反馈**一个**问题。
+          required: true
+        - label: 我确定本 issue 内容详细
+          required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: 版本信息
+      description: 你使用的程序版本号是多少？
+      placeholder: 格式 x.y.z
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug 描述
+      description: 清晰简洁地描述你遇到的问题。
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 如何一步步触发这个 Bug？
+      placeholder: |
+        1. 打开 '...'
+        2. 点击 '...'
+        3. 出现错误 '...'
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望行为
+      description: 你期望程序应该发生什么？
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 错误日志或截图
+      description: 如果有相关的错误日志或截图，请粘贴在这里。
+      render: shell

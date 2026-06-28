@@ -1,0 +1,52 @@
+name: 🔧 修改请求
+description: 对现有功能提出小幅度优化或改进建议
+title: "[修改]: "
+labels: ["修改"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        如果你只是希望对现有功能做一点小优化，请在这里提出。
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: 提交前检查
+      options:
+        - label: 我已搜索现有 issue，**未找到**重复或类似修改点。
+          required: true
+        - label: 本 issue 仅反馈**一个**修改点。
+          required: true
+        - label: 我确定本 issue 内容详细
+          required: true
+
+  - type: input
+    id: component
+    attributes:
+      label: 涉及的功能或模块
+      description: 具体是哪个功能需要修改？
+      placeholder: 例如：设置页面、导出功能
+    validations:
+      required: true
+
+  - type: textarea
+    id: current
+    attributes:
+      label: 当前的表现或状态
+      description: 描述目前它是如何工作的。
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 你建议的修改方案
+      description: 你希望它变成什么样？为什么？
+    validations:
+      required: true
+
+  - type: textarea
+    id: benefit
+    attributes:
+      label: 预期带来的好处
+      description: 这个改动会如何提升使用体验？
