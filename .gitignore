@@ -124,7 +124,6 @@ go.sum
 Cargo.lock
 poetry.lock
 Pipfile.lock
-requirements.txt
 
 # ================================
 # 构建输出 / 编译产物
